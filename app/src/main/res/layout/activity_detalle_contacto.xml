@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/formLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Campos de texto para los detalles de la persona -->
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:inputType="textCapWords"
+            android:padding="8dp"
+            android:background="@drawable/rounded_edittext" />
+
+        <EditText
+            android:id="@+id/etApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apellido"
+            android:inputType="textCapWords"
+            android:padding="8dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/etEmpresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Empresa"
+            android:inputType="textCapWords"
+            android:padding="8dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/etDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dirección"
+            android:inputType="textCapWords"
+            android:padding="8dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/etCiudad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ciudad"
+            android:inputType="textCapWords"
+            android:padding="8dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/etEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Estado/Departamento"
+            android:inputType="textCapWords"
+            android:padding="8dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/etFotoPerfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="URL de foto de perfil"
+            android:inputType="textUri"
+            android:padding="8dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="8dp" />
+
+        <!-- Botones para agregar teléfonos y emails -->
+        <Button
+            android:id="@+id/btnAgregarTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar Teléfono"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white" />
+
+        <!-- Lista de teléfonos agregados -->
+        <LinearLayout
+            android:id="@+id/listaTelefonos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnAgregarEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar Email"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@android:color/white" />
+
+        <!-- Lista de correos electrónicos agregados -->
+        <LinearLayout
+            android:id="@+id/listaEmails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/btnGuardarContacto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar Contacto"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/teal_700"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</ScrollView>
